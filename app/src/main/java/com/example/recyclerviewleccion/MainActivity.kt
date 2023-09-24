@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
         initRecyclerView()
     }
     fun initRecyclerView(){
-        //val recyclerView=binding.recycler
         binding.recycler.layoutManager=LinearLayoutManager(this)
         binding.recycler.adapter= MovieAdapter(MovieProvider.movies)
     }
